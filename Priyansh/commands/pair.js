@@ -30,7 +30,7 @@ module.exports.run = async function({ api, event, args, Users, Threads, Currenci
         // api.changeNickname(`😘👉🔐🔐 ${name} Property 🔐🔐👈😘`, event.threadID, event.senderID);
         // api.changeNickname(`😘👉🔐🔐 ${namee} Property🔐🔐👈😘`, event.threadID, id);
         var sex = await data[id].gender;
-        var gender = sex == 2 ? "Male🧑" : sex == 1 ? "Female👩‍🦰" : "𝐒𝐀𝐃𝐀 𝐒𝐎𝐇𝐀𝐆𝐀𝐍 𝐑𝐇𝐎 🫰☺️";
+        var gender = sex == 2 ? "Male🧑" : sex == 1 ? "Female👩‍🦰" : "KHOSH RHO";
         // Currencies.setData(event.senderID, options = {money: money - 500})
         let Avatar = (await axios.get( `https://graph.facebook.com/${id}/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`, { responseType: "arraybuffer" } )).data;
             fs.writeFileSync( __dirname + "/cache/avt.png", Buffer.from(Avatar, "utf-8") );
